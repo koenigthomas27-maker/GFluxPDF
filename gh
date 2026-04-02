@@ -1,2 +1,0 @@
-git remote add gflux-pdf <https://github.com/koenigthomas27-maker/gflux-pdf.git>
-git push gflux-pdf gflux-pdf-standalone:main
