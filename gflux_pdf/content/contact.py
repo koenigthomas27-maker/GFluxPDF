@@ -15,13 +15,13 @@ from gflux_pdf.config import (
 
 CONTACT_ROWS = {
     "Direktkontakt": [
-        ("E-Mail",           "koenigthomas27@gmail.com"),
+        ("E-Mail",            "koenigthomas27@gmail.com"),
         # ("Telefon / WhatsApp", ""),           # uncomment when ready
     ],
     "Social Media": [
-        # ("Instagram",      ""),               # uncomment when ready
+         ("Instagram",        "https://www.instagram.com/thomas__koenigz/"),               
         # ("YouTube",        ""),               # uncomment when ready
-        # ("TikTok",         ""),               # uncomment when ready
+         ("FaceBook",         "https://www.facebook.com/thomas.koenig.129"),               
         # ("LinkedIn",       ""),               # uncomment when ready
     ],
     "Website & Blog": [
