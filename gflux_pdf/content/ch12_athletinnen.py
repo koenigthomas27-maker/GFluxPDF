@@ -1,6 +1,6 @@
 from reportlab.platypus import PageBreak
 from gflux_pdf.components import (
-    sp, body, H2, female_box, mk_table, section_break,
+    sp, body, H2, callout_bold, female_box, mk_table, section_break,
 )
 from gflux_pdf.config import CONTENT_W
 
@@ -69,6 +69,11 @@ def build() -> list:
          "Krafttraining kann bei reduzierter Intensität weiterlaufen."],
     ], [CONTENT_W*0.25, CONTENT_W*0.15, CONTENT_W*0.3, CONTENT_W*0.3]))
     s.append(sp(6))
+    s.append(body(
+        "Mit dem Zyklus zu trainieren statt dagegen ist kein Komfort-Feature — es ist ein "
+        "Leistungshebel. Die Phasen sind vorhersehbar. Wer sie nutzt, gewinnt."
+    ))
+    s.append(sp(6))
 
     # --- NEW CONTENT: Cycle-phase training intensity table ---
     s.append(H2("Trainingsintensität nach Zyklusphase"))
@@ -122,6 +127,34 @@ def build() -> list:
         "automatisch durch Glättung über 7 Tage. Nicht mit Kalorienreduktion auf prämenstruelle "
         "Waageanstiege reagieren — das ist die schlechteste mögliche Reaktion auf eine hormonelle "
         "Wasserschwankung."
+    ))
+    s.append(sp(4))
+    s.append(body(
+        "Diese Signale sind keine Störvariablen — sie sind Daten. Wer sie liest, trainiert "
+        "präziser als jeder Athlet, der sie ignoriert."
+    ))
+    s.append(sp(8))
+    s.append(callout_bold(
+        "HÄUFIGE FEHLER — ATHLETINNEN<br/><br/>"
+        "— <b>Kalorienreduktion bei prämenstruellem Gewichtsanstieg:</b> Das ist hormonelles "
+        "Wasser, kein Fett. Einschränkung in dieser Phase verschlechtert Regeneration und "
+        "Hormonbalance ohne jeden Nutzen.<br/>"
+        "— <b>Protein-Zielwert wie bei männlichen Athleten ansetzen:</b> Athletinnen benötigen "
+        "5–10% mehr pro kg Magermasse für Hormongesundheit und Regeneration — besonders in "
+        "der Lutealphase.<br/>"
+        "— <b>Intensive Einheiten in der Menstruationsphase erzwingen:</b> Prostaglandine "
+        "verursachen systemische Entzündung. Zone 2 und Schlaf sind hier die Protokollwahl.<br/>"
+        "— <b>Zyklusphase ignorieren und uniform durchtrainieren:</b> Die Daten sind vorhanden "
+        "und vorhersehbar. Sie zu ignorieren ist kein Toughness-Signal — es ist Ressourcenverschwendung."
+    ))
+    s.append(sp(6))
+    s.append(callout_bold(
+        "EXEKUTION — KAPITEL 12<br/><br/>"
+        "— Zyklusphase täglich im Tracking notieren. Ernährung und Intensität entsprechend anpassen.<br/>"
+        "— Lutealphase: Gesamtkalorien +150–300 kcal. Fett auf 35–40% der Nicht-Cardio-Kalorien.<br/>"
+        "— Menstruationsphase: Omega-3 maximieren. Nur Zone 2. Krafttraining bei reduzierter Intensität.<br/>"
+        "— Auf prämenstruelle Waagenschwankungen (1–3 kg) nicht mit Kalorienreduktion reagieren.<br/>"
+        "— Protein in der Lutealphase am oberen Ende halten: 2,3 g/kg Magermasse."
     ))
 
     return s

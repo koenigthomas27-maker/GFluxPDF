@@ -52,6 +52,11 @@ def build() -> list:
     ], [CONTENT_W*0.15, CONTENT_W*0.15, CONTENT_W*0.25, CONTENT_W*0.2, CONTENT_W*0.25],
         accent_rows={4}))
     s.append(sp(6))
+    s.append(body(
+        "Volumen steigt. Intensität steigt. Cardio steigt. Kalorien müssen mitsteigen. "
+        "Wer eine dieser Variablen entkoppelt, bricht die Kette."
+    ))
+    s.append(sp(6))
 
     s.append(H2("Zwischen den Zyklen — Volumen-Reset"))
     s.append(body(
@@ -114,6 +119,32 @@ def build() -> list:
         "'verschissensten Tag' durchbrichst du dein Gewichts-Plateau beim Kniebeugen oder läufst "
         "einen 10k-PR. Warum? Weil der Körper sich anpasst. Die Stresstoleranz deines ZNS wurde "
         "zellulär erweitert. Du hast dem Körper bewiesen, dass die vorherige Grenze eine Illusion war."
+    ))
+    s.append(sp(4))
+    s.append(body(
+        "Das ist der Punkt, an dem die meisten stagnieren — nicht weil das Programm falsch ist, "
+        "sondern weil sie hier aufhören."
+    ))
+    s.append(sp(8))
+    s.append(callout_bold(
+        "HÄUFIGE FEHLER — VOLUMENZYKLUS<br/><br/>"
+        "— <b>Peak-Volumen in den nächsten Zyklus mitnehmen:</b> Der Reset ist Absicht, kein "
+        "Rückschritt. Wer das Minimum überspringt, verbrennt das Fundament des nächsten Blocks.<br/>"
+        "— <b>Entlastungswoche als optional behandeln:</b> Superkompensation findet hier statt — "
+        "nicht in der Belastungswoche. Wer überspringt, überspringt die eigentliche Adaption.<br/>"
+        "— <b>Subjektives Gefühl über Biomarker stellen:</b> Schlechtes Gefühl bei stabilen Markern "
+        "ist kein Entlastungssignal — es ist das Adaptionsfenster.<br/>"
+        "— <b>Isolation vor Grundzügen reduzieren:</b> Bei Ermüdung werden Isolationen zuerst "
+        "reduziert, Grundzüge zuletzt. Niemals umgekehrt."
+    ))
+    s.append(sp(6))
+    s.append(callout_bold(
+        "EXEKUTION — KAPITEL 08<br/><br/>"
+        "— Starte jeden neuen Block am Minimum aller Stufenspannen. Immer.<br/>"
+        "— Peak-Volumen wird nicht in den nächsten Zyklus mitgenommen — bewusster Reset.<br/>"
+        "— Entlastungswoche nach dem Peak ist nicht verhandelbar. 50–60% Volumen, nur Grundzüge.<br/>"
+        "— Block-Ziel zu Beginn festlegen. Anpassungen nur auf Block-Ebene, nicht Session zu Session.<br/>"
+        "— Bei stabilen Biomarkern durchpushen — auch wenn das subjektive Gefühl dagegen ist."
     ))
 
     return s

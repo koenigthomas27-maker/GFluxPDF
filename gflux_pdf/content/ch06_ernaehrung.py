@@ -32,6 +32,11 @@ def build() -> list:
          "Nur Untergrenze — keine Wiederauffüllung"],
     ], [CONTENT_W * 0.3, CONTENT_W * 0.25, CONTENT_W * 0.2, CONTENT_W * 0.25]))
     s.append(sp(6))
+    s.append(body(
+        "Wer die Untergrenze unterschreitet, zerstört den Mechanismus, bevor das erste schwere "
+        "Training beginnt."
+    ))
+    s.append(sp(6))
 
     s.append(H2("Makronährstoff-Rahmen"))
     s.append(body(
@@ -74,6 +79,33 @@ def build() -> list:
         "Nicht-Cardio-Kalorien erhöht werden. Die Omega-3-Aufnahme maximieren. Kohlenhydrate können "
         "hoch bleiben — dies ist keine Fett-oder-KH-Entscheidung, sondern eine strategische Erhöhung "
         "der Gesamtkalorien zur Unterstützung des erhöhten Stoffwechselbedarfs des Hormonzyklus."
+    ))
+    s.append(sp(6))
+    s.append(body(
+        "Die Kalorienuntergrenze schafft die Voraussetzung für schweres Training. Schweres Training "
+        "rechtfertigt die Untergrenze. Die Makros steuern, wohin die Energie fließt. Jede "
+        "Komponente stützt die andere."
+    ))
+    s.append(sp(8))
+    s.append(callout_bold(
+        "HÄUFIGE FEHLER — ERNÄHRUNGSRAHMEN<br/><br/>"
+        "— <b>Protein über 2,3 g/kg ansetzen:</b> Unnötiger Kostenaufwand ohne Nutzenzuwachs. "
+        "Verdrängt Kohlenhydrate aus dem Kalorienbudget — genau das Gegenteil des Ziels.<br/>"
+        "— <b>Fett und Kohlenhydrate in einer Mahlzeit massiv kombinieren:</b> Insulin öffnet die "
+        "zellulären Tore. Fett nutzt sie zur Speicherung. Das ist Mechanismus, kein Theorie.<br/>"
+        "— <b>Kohlenhydrate nach dem Training meiden:</b> Genau jetzt ist die Glykogensyntheserate "
+        "am höchsten. Wer hier spart, spart am teuersten Ende.<br/>"
+        "— <b>Kalorienuntergrenze an Ruhetagen ignorieren:</b> Kein Training bedeutet nicht kein "
+        "Bedarf. Muskelproteinreparatur findet am Ruhetag statt — sie braucht Substrate."
+    ))
+    s.append(sp(6))
+    s.append(callout_bold(
+        "EXEKUTION — KAPITEL 06<br/><br/>"
+        "— Kalorienboden täglich einhalten — unabhängig vom Trainingstag.<br/>"
+        "— Protein auf 1,8–2,3 g/kg Magermasse. Oberes Ende bei hohem Trainingsvolumen.<br/>"
+        "— Größte Kohlenhydrat-Mahlzeit direkt nach dem Training.<br/>"
+        "— Fett strikt von Pre-/Post-Workout-Meals trennen.<br/>"
+        "— Cardio-Kalorien immer zusätzlich zur Untergrenze essen — nie als Teil davon."
     ))
 
     return s

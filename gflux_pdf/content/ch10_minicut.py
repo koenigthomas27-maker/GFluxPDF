@@ -45,6 +45,15 @@ def build() -> list:
          "Maximal 2-4 Wochen vor Rückkehr zum Überschuss."],
     ], [CONTENT_W*0.25, CONTENT_W*0.35, CONTENT_W*0.4]))
     s.append(sp(6))
+    s.append(body(
+        "Ein Mini-Cut, der die Leistung kostet, hat seinen Zweck verfehlt."
+    ))
+    s.append(sp(4))
+    s.append(body(
+        "Das Defizit entsteht durch reduzierten Re-Eat, nicht durch Kalorienrestriktion. "
+        "Das ist der Unterschied zwischen kontrolliertem Fettverlust und katabolem Abbau."
+    ))
+    s.append(sp(6))
 
     s.append(callout_bold(
         "LEISTUNG IST DER REGULATOR: Wenn die Cardio-Leistung — Tempo, Leistungsoutput, gefühlte "
@@ -52,6 +61,27 @@ def build() -> list:
         "sofort reduziert. Laufvolumen im Defizit auf Kosten der Output-Qualität zu jagen ist "
         "extrem destruktiv. Ein Athlet mit hoher aerober Basiskapazität schützt diese am besten, "
         "indem er lockerer und kürzer läuft, nicht härter."
+    ))
+    s.append(sp(8))
+    s.append(callout_bold(
+        "HÄUFIGE FEHLER — MINI-CUT<br/><br/>"
+        "— <b>Defizit über 500 kcal ansetzen:</b> Zerstört Muskelgewebe und Leistung schneller "
+        "als Fett. Aggressiver Cut ist kein G-Flux-Mini-Cut — es ist ein anderes Protokoll.<br/>"
+        "— <b>Mini-Cut länger als 4 Wochen führen:</b> Testosteron, Schilddrüsenhormone und "
+        "metabolische Rate fallen ab Woche 4 messbar. Sofortige Rückkehr zum Überschuss.<br/>"
+        "— <b>Hochintensives Cardio im Defizit fortführen:</b> ZNS-Erholung ist im Defizit "
+        "verlangsamt. Intervalle hier opfern Kraftqualität für minimalen Zusatzeffekt.<br/>"
+        "— <b>Protein unter den Aufbauwert senken:</b> Muskelproteinsynthese ist im Defizit "
+        "bereits reduziert. Zu wenig Protein beschleunigt den katabolen Prozess."
+    ))
+    s.append(sp(6))
+    s.append(callout_bold(
+        "EXEKUTION — KAPITEL 10<br/><br/>"
+        "— Cardio-Wiederauffüllung auf 60–70% senken. Nicht tiefer.<br/>"
+        "— Cardio-Volumen um 10–20% reduzieren. Nur Zone 2 — kein Intensitätswork.<br/>"
+        "— Trainingsvolumen um 1 Satz je Stufe reduzieren. Isolationen zuerst, Grundzüge zuletzt.<br/>"
+        "— Defizit niemals über 500 kcal unter TDEE.<br/>"
+        "— Maximum 2–4 Wochen. Dann sofortige Rückkehr zum Überschuss."
     ))
 
     return s

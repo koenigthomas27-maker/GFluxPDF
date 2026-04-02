@@ -31,6 +31,10 @@ def build() -> list:
         ["Tag 9", "Ruhe / Arme / Bauch","Nur leichtes Cross-Training",   "Zyklus wird mit Tag 1 neu gestartet"],
     ], [CONTENT_W * 0.12, CONTENT_W * 0.25, CONTENT_W * 0.33, CONTENT_W * 0.3]))
     s.append(sp(6))
+    s.append(body(
+        "Der Zyklus läuft nicht nach deinem Kalender. Er läuft nach deinem ZNS."
+    ))
+    s.append(sp(4))
 
     s.append(callout_bold(
         "STAPELREGEL: Hartes Cardio — Intervalle, VO2max-Einheiten, Tempoläufe, "
@@ -56,6 +60,10 @@ def build() -> list:
         "jeder Stufenspanne. Volumen wird nur erhöht, wenn die Regenerationsdaten das bedingungslos "
         "unterstützen. Das Volumen steigt nie schneller, als der Körper es zellulär verarbeiten kann. "
         "Wer hier das Ego nicht kontrolliert und zu früh eskaliert, sabotiert die langfristige Adaption."
+    ))
+    s.append(sp(4))
+    s.append(body(
+        "Die meisten scheitern nicht am Volumen. Sie scheitern, weil sie zu früh zu viel wollten."
     ))
     s.append(sp(4))
 
@@ -125,5 +133,31 @@ def build() -> list:
         ["Bauch",   "Ab-Wheel Rollout",           "3 × 8-10",  "90 Sek.", "Nur wenn Lendenwirbelkontrolle stabil."],
         ["Cardio",  "Leichtes Cardio (Zone 2)",   "20-30 Min.","—",       "Elliptical oder Fahrrad. Kein Laufen."],
     ], [CONTENT_W*0.15, CONTENT_W*0.3, CONTENT_W*0.2, CONTENT_W*0.12, CONTENT_W*0.23]))
+    s.append(sp(6))
+    s.append(body(
+        "Der 9-Tage-Zyklus schafft den Rahmen, in dem Cardio, Ernährung und Regeneration ihre "
+        "Wirkung entfalten können. Entferne den Rahmen — und du verlierst den Mechanismus."
+    ))
+    s.append(sp(8))
+    s.append(callout_bold(
+        "HÄUFIGE FEHLER — TRAININGSARCHITEKTUR<br/><br/>"
+        "— <b>Volumen zu früh steigern:</b> Frühes Eskalieren produziert kein Fortschrittssignal — "
+        "es produziert Rauschen und akkumuliert Verletzungsrisiko ohne proportionalen Reiz.<br/>"
+        "— <b>Hartes Cardio an Rumpf-Tagen stapeln:</b> Die Regenerationskapazität für die nächste "
+        "schwere Einheit ist damit zerstört.<br/>"
+        "— <b>Zwei aufeinanderfolgende schwere Sessions in gleicher Bewegungsebene:</b> Kumulative "
+        "Sehnenbelastung ohne Erholungsfenster. Das Ergebnis ist strukturelles Versagen, kein Fortschritt.<br/>"
+        "— <b>Tier 2 und 3 bis zum Versagen fahren:</b> DUP Sekundär und Isolation sind Volumenarbeit. "
+        "Maximale Intensität hier frisst die Erholung für den nächsten Tier-1-Grundzug."
+    ))
+    s.append(sp(6))
+    s.append(callout_bold(
+        "EXEKUTION — KAPITEL 03<br/><br/>"
+        "— Starte alle Tier-Volumina am unteren Ende. Immer — unabhängig von früherer Trainingserfahrung.<br/>"
+        "— Steigere Volumen nur, wenn HRV und Ruhepuls es uneingeschränkt erlauben.<br/>"
+        "— Hartes Cardio ausschließlich auf Extremitäten-Tage stapeln, direkt vor dem Ruhetag.<br/>"
+        "— Niemals zwei aufeinanderfolgende schwere Sessions in derselben Bewegungsebene.<br/>"
+        "— Halte deine Zyklusstruktur für mindestens 4 Wochen konstant."
+    ))
 
     return s

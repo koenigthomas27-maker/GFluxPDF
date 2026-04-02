@@ -25,6 +25,10 @@ def build() -> list:
         "dem die zelluläre Anpassung eigentlich stattfinden würde."
     ))
     s.append(body(
+        "Das System funktioniert. Die Frage ist nicht, ob du das Potenzial hast — die Frage ist, "
+        "ob du lang genug drin bleibst, um es zu realisieren."
+    ))
+    s.append(body(
         "Jede Komponente stärkt jede andere. Hohe Kalorien unterstützen schweres Training. Schweres "
         "Training fordert hohe Kalorien. Cardio verbessert Insulinsensitivität. Hohe "
         "Insulinsensitivität macht Kohlenhydrate anaboler. Qualitätsschlaf pusht die HRV. Bessere "
@@ -50,6 +54,15 @@ def build() -> list:
         "den Überschuss in Muskel. Die Daten halten das System ehrlich. Die Entlastungswoche "
         "realisiert die Anpassung. Entferne eine einzige Komponente und das System kollabiert. "
         "Führe alle Komponenten aus, und das Resultat ist unausweichlich."
+    ))
+    s.append(sp(6))
+    s.append(callout_bold(
+        "EXEKUTION — KAPITEL 13<br/><br/>"
+        "— Führe die ersten 4 Wochen vollständig manuell durch. Kein Abweichen.<br/>"
+        "— Dem EMA über mindestens 4 Wochen vertrauen — nicht der täglichen Waage.<br/>"
+        "— Entlastungswoche nach jedem Peak-Block ausführen. Ohne Ausnahme.<br/>"
+        "— Alle Komponenten gleichzeitig ausführen — kein Cherry-Picking einzelner Kapitel.<br/>"
+        "— Bei stabilen Biomarkern durchhalten. Der Körper passt sich an."
     ))
 
     return s

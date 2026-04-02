@@ -1,6 +1,6 @@
 from reportlab.platypus import PageBreak
 from gflux_pdf.components import (
-    sp, body, H2, callout, mk_table, section_break,
+    sp, body, H2, callout, callout_bold, mk_table, section_break,
 )
 from gflux_pdf.config import CONTENT_W
 
@@ -27,6 +27,11 @@ def build() -> list:
         "Muskelgewebe aufgenommen. Dieser Effekt ist akut (hält 24-72 Stunden nach jeder Session "
         "an) und chronisch (strukturelle Anpassung über Wochen). Deshalb ist der Cardio-Anteil "
         "metabolische Infrastruktur, kein optionales Konditionswork."
+    ))
+    s.append(sp(4))
+    s.append(body(
+        "Cardio ist nicht optional. Es ist die metabolische Infrastruktur, auf der jeder andere "
+        "Teil des Protokolls aufbaut."
     ))
     s.append(sp(6))
 
@@ -87,6 +92,33 @@ def build() -> list:
         "das Glukosemanagement gleichzeitig über zwei verschiedene Signalwege. Kombiniert mit "
         "GLUT4-Hochregulation durch Ausdauertraining wird die Kohlenhydrat-Verteilung ins "
         "Muskelgewebe deutlich effizienter als durch jede einzelne Maßnahme allein."
+    ))
+    s.append(sp(4))
+    s.append(body(
+        "Berberin und Ausdauertraining wirken über verschiedene Wege auf dasselbe Ziel. "
+        "Kombiniert ist der Effekt nicht additiv — er ist multiplikativ."
+    ))
+    s.append(sp(8))
+    s.append(callout_bold(
+        "HÄUFIGE FEHLER — SUPPLEMENTIERUNG<br/><br/>"
+        "— <b>Supplemente ohne Mahlzeit nehmen:</b> Berberin und R-Liponsäure brauchen Nahrung. "
+        "Auf nüchternen Magen ist die Wirkung reduziert und die Magenverträglichkeit schlechter.<br/>"
+        "— <b>Omega-3 in einer einzigen Dosis:</b> Verteilung auf 2–3 Mahlzeiten maximiert "
+        "Absorption und entzündungshemmende Wirkung.<br/>"
+        "— <b>Magnesium am Morgen nehmen:</b> Magnesium-Glycinat wirkt über GABA schlaffördernd. "
+        "Morgens eingenommen bringt Schläfrigkeit, keinen Nutzen.<br/>"
+        "— <b>Cardio reduzieren und Insulinsensitivität per Supplementierung kompensieren:</b> "
+        "Supplemente sind Amplifikatoren. Der strukturelle GLUT4-Aufbau durch Ausdauertraining "
+        "ist nicht ersetzbar."
+    ))
+    s.append(sp(6))
+    s.append(callout_bold(
+        "EXEKUTION — KAPITEL 07<br/><br/>"
+        "— Berberin mit jeder kohlenhydratreichen Mahlzeit — drei Dosen täglich.<br/>"
+        "— Schlaf-Stack 30–60 Min. vor dem Schlafen: Magnesium-Glycinat, Apigenin, L-Theanin.<br/>"
+        "— Omega-3 auf 2–3 Mahlzeiten aufteilen. Ziel: 1,5–2 g EPA/DHA täglich.<br/>"
+        "— Ausdauertraining ist die Infrastruktur. Supplemente sind der Verstärker. "
+        "Reihenfolge nicht umkehren."
     ))
 
     return s

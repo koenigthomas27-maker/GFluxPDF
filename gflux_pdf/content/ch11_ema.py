@@ -1,6 +1,6 @@
 from reportlab.platypus import PageBreak
 from gflux_pdf.components import (
-    sp, body, bul, H2, callout, formula, mk_table, section_break,
+    sp, body, bul, H2, callout, callout_bold, formula, mk_table, section_break,
 )
 from gflux_pdf.config import CONTENT_W
 
@@ -38,6 +38,10 @@ def build() -> list:
     ))
     s.append(sp(4))
     s.append(formula("EMA_heute = (Gewicht_heute × 0.25) + (EMA_gestern × 0.75)"))
+    s.append(sp(4))
+    s.append(body(
+        "Die Waage lügt. Der EMA nicht. Das ist kein Trost — das ist Mathematik."
+    ))
     s.append(sp(4))
     s.append(body(
         "<b>Beispiel:</b> Ein 85 kg schwerer Athlet isst massive Mengen Kohlenhydrate. Sein "
@@ -91,6 +95,27 @@ def build() -> list:
         "nun die Fluktuationen. Wer den administrativen Aufwand eliminieren und die absolute "
         "Präzision will, lagert diese Mathematik im nächsten Schritt an den automatisierten "
         "CbTK-Tracker aus."
+    ))
+    s.append(sp(8))
+    s.append(callout_bold(
+        "HÄUFIGE FEHLER — EMA & GEWICHT<br/><br/>"
+        "— <b>Auf tägliche Schwankungen reagieren:</b> Das ist Rauschen, kein Signal. Wer hier "
+        "kürzt oder erhöht, sabotiert den EMA-Prozess aktiv.<br/>"
+        "— <b>Protokollanpassungen vor 4 Wochen vornehmen:</b> Das Fenster ist zu kurz. "
+        "Die Daten lügen noch.<br/>"
+        "— <b>Muskelkater als Fortschrittsindikator werten:</b> Muskelkater zeigt Neuheit. "
+        "Nicht Anpassung.<br/>"
+        "— <b>Die Waage über das Morgenfoto stellen:</b> Das Foto zeigt Gewebequalität. "
+        "Die Waage zeigt Glykogen und Wasser."
+    ))
+    s.append(sp(6))
+    s.append(callout_bold(
+        "EXEKUTION — KAPITEL 11<br/><br/>"
+        "— Täglich nüchtern wiegen, direkt nach dem Toilettengang.<br/>"
+        "— EMA täglich berechnen: (Gewicht × 0,25) + (EMA_gestern × 0,75)<br/>"
+        "— Tagesgewicht niemals isoliert bewerten — nur der EMA zählt.<br/>"
+        "— Erst nach 4 Wochen EMA-Daten Protokollanpassungen vornehmen.<br/>"
+        "— Morgenfoto hat Vorrang vor der Waage."
     ))
 
     return s

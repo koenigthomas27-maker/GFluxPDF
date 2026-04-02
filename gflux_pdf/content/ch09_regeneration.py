@@ -1,6 +1,6 @@
 from reportlab.platypus import PageBreak
 from gflux_pdf.components import (
-    sp, body, bul, H2, mk_table, section_break,
+    sp, body, bul, H2, callout_bold, mk_table, section_break,
 )
 from gflux_pdf.config import CONTENT_W
 
@@ -49,6 +49,11 @@ def build() -> list:
          "Nicht für Protokollentscheidungen nutzen. HRV und Ruhepuls sind die verlässlichen Signale."],
     ], [CONTENT_W*0.15, CONTENT_W*0.25, CONTENT_W*0.25, CONTENT_W*0.35]))
     s.append(sp(6))
+    s.append(body(
+        "Wer hier nicht messen will, trainiert blind. Und wer blind trainiert, läuft früher "
+        "oder später gegen eine Wand."
+    ))
+    s.append(sp(6))
 
     s.append(H2("Ungeplante Entlastungsauslöser"))
     s.append(body(
@@ -72,6 +77,33 @@ def build() -> list:
         "Untergrenze (Sedentary Baseline). Du erzeugst jedoch KEIN Defizit. Der Körper braucht "
         "Nährstoffe, um sich zu erholen und zellulär zu reparieren. Sich während einer Krankheit "
         "herunterzuhungern, garantiert den katabolen Verlust von hart erarbeitetem Muskelgewebe."
+    ))
+    s.append(sp(4))
+    s.append(body(
+        "Biomarker steuern nicht nur den Deload — sie steuern auch den Zeitpunkt für maximale "
+        "Belastung. Das ist das Werkzeug in beide Richtungen."
+    ))
+    s.append(sp(8))
+    s.append(callout_bold(
+        "HÄUFIGE FEHLER — BIOMARKER & REGENERATION<br/><br/>"
+        "— <b>Auf tägliche HRV-Schwankungen reagieren:</b> Ein einzelner schlechter Wert ist "
+        "Rauschen, kein Signal. Erst 2+ aufeinanderfolgende Tage unter Baseline sind "
+        "handlungsrelevant.<br/>"
+        "— <b>BioCharge-Score für Protokollentscheidungen nutzen:</b> Systematisch durch "
+        "NEAT-Fehlklassifikation verfälscht. HRV und Ruhepuls sind die einzigen verlässlichen Marker.<br/>"
+        "— <b>Krankheit als Deload-Block behandeln:</b> Krankheit ist Systemausfall, kein geplanter "
+        "Entlastungsblock. Training pausiert. Kalorien auf Untergrenze — kein Defizit.<br/>"
+        "— <b>Subjektive Bereitschaft als primären Indikator nutzen:</b> Gefühl kann stimmen oder "
+        "lügen. Daten lügen nicht. Subj. Bereitschaft ist Bestätigungsmarker, nicht Entscheidungsmarker."
+    ))
+    s.append(sp(6))
+    s.append(callout_bold(
+        "EXEKUTION — KAPITEL 09<br/><br/>"
+        "— HRV und Ruhepuls täglich morgens messen — vor dem Aufstehen.<br/>"
+        "— Erst bei 2+ Tagen >10% HRV-Abfall unter Baseline die Trainingsintensität reduzieren.<br/>"
+        "— Bei Krankheit: Training sofort pausieren, Kalorien auf sitzende Untergrenze, kein Defizit.<br/>"
+        "— BioCharge / Gerätebereitschaft nicht für Protokollentscheidungen nutzen.<br/>"
+        "— Subjektive Bereitschaft nur als Bestätigung — nie als primären Marker."
     ))
 
     return s

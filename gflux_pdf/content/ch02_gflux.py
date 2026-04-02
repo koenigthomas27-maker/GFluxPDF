@@ -51,6 +51,21 @@ def build() -> list:
          "Schlanker Aufbau ganzjährig problemlos möglich"],
     ], [CONTENT_W * 0.25, CONTENT_W * 0.35, CONTENT_W * 0.4]))
     s.append(sp(6))
+    s.append(body(
+        "Der Unterschied zwischen traditionellem Masseaufbau und G-Flux ist nicht graduell. "
+        "Er ist strukturell."
+    ))
+    s.append(sp(4))
+    s.append(body(
+        "Hohe Kalorien ermöglichen schweres Training. Schweres Training fordert hohe Kalorien. "
+        "G-Flux verstärkt sich selbst — oder kollabiert, wenn eine Seite wegfällt."
+    ))
+    s.append(sp(4))
+    s.append(body(
+        "Wer den Kalorienboden nicht manuell berechnen will: Der CbTK-Tracker übernimmt die "
+        "Berechnung für alle drei NEAT-Kategorien automatisch."
+    ))
+    s.append(sp(6))
 
     s.append(callout_bold(
         "DIE KERNREGEL: Cardio wird niemals genutzt, um ein Kaloriendefizit zu erzeugen. Jede durch "
@@ -58,6 +73,28 @@ def build() -> list:
         "gegessen. Cardio erweitert den Motor, verbessert die Insulinsensitivität und erhöht die "
         "gesamte Workload-Kapazität. Es verbrennt kein Fett — das Ernährungsprotokoll steuert die "
         "Körperkomposition. Wer diese Regel bricht, scheitert."
+    ))
+    s.append(sp(8))
+    s.append(callout_bold(
+        "HÄUFIGE FEHLER — G-FLUX-PRINZIP<br/><br/>"
+        "— <b>Cardio als Kaloriendefizit einplanen:</b> Du trainierst deinen Körper in Sparsamkeit "
+        "statt Kapazität. Muskelaufbau stagniert. Das ist der teuerste Fehler im Protokoll.<br/>"
+        "— <b>Kalorienboden zu niedrig ansetzen:</b> Das System braucht Fluss. Zu wenig Energie "
+        "bedeutet zu wenig Adaptationsressource — egal wie hart trainiert wird.<br/>"
+        "— <b>G-Flux mit unrestriktiertem Bulk verwechseln:</b> Kein Überschuss ohne Funktion. "
+        "Jede Kalorie hat eine Rolle. Der Überschuss entsteht durch Trainingsvolumen, nicht durch "
+        "Essen ohne Limit.<br/>"
+        "— <b>Die Kernregel einmalig brechen und ignorieren:</b> Wer Cardio-Kalorien nicht "
+        "zurückisst, zerstört den Mechanismus. Das Protokoll funktioniert nur als vollständiges System."
+    ))
+    s.append(sp(6))
+    s.append(callout_bold(
+        "EXEKUTION — KAPITEL 02<br/><br/>"
+        "— Berechne deinen Kalorienboden: 35 kcal/kg Magergewicht (Training + hoher NEAT), "
+        "32 kcal/kg (Bürojob + Training), 27–28 kcal/kg (Ruhetag, sitzend).<br/>"
+        "— Jede Cardio-Kalorie wird zusätzlich zur Untergrenze gegessen. Keine Ausnahmen.<br/>"
+        "— Cardio ist kein Defizit-Werkzeug. Es ist ein Kapazitätswerkzeug.<br/>"
+        "— Verstehe die Kernregel vollständig, bevor du das erste Training beginnst."
     ))
 
     return s

@@ -50,6 +50,10 @@ def build() -> list:
         "akkumuliert toxische ZNS-Ermüdung, zerstört die Krafttrainingsqualität und blockiert die "
         "Superkompensation ohne verhältnismäßigen aeroben Nutzen."
     ))
+    s.append(sp(4))
+    s.append(body(
+        "Hier entscheidet sich, ob du Kapazität aufbaust oder Ermüdung akkumulierst."
+    ))
     s.append(sp(6))
 
     s.append(H2("Cross-Training — Mehr als nur Elliptical"))
@@ -113,6 +117,37 @@ def build() -> list:
         "Geräte-Algorithmen unterschätzen den Kalorienverbrauch schwererer Athleten systematisch. "
         "Die 1-kcal/kg/km-Methode ist durch Leistungsdaten validiert und weitaus genauer als "
         "handgelenkbasierte Schätzungen."
+    ))
+    s.append(sp(4))
+    s.append(body(
+        "Wer den Calorie Re-Eat nicht täglich manuell tracken will: Der CbTK-Tracker berechnet "
+        "die Wiederauffüllung automatisch nach Aktivität, Gewicht und Cardio-Art."
+    ))
+    s.append(sp(4))
+    s.append(body(
+        "Cardio verbessert Insulinsensitivität. Insulinsensitivität macht Kohlenhydrate anaboler. "
+        "Das ist keine Empfehlung — das ist Mechanismus."
+    ))
+    s.append(sp(8))
+    s.append(callout_bold(
+        "HÄUFIGE FEHLER — CARDIO<br/><br/>"
+        "— <b>Zu oft Intervalle einbauen:</b> Das ZNS akkumuliert toxische Ermüdung. "
+        "Kraftqualität kollabiert. Das 80/20-Verhältnis existiert aus einem Grund.<br/>"
+        "— <b>Cardio-Kalorien nicht zurückessen:</b> Du trainierst deinen Körper, Energie zu sparen, "
+        "nicht zu nutzen. Der Muskelaufbau stoppt.<br/>"
+        "— <b>Volumen zu schnell steigern:</b> Sehnen adaptieren langsamer als Muskulatur. "
+        "Das Ergebnis sind strukturelle Verletzungen, kein Fortschritt.<br/>"
+        "— <b>Hartes Cardio an Rumpf-Tagen stapeln:</b> Die Regeneration für den nächsten "
+        "schweren Tag ist damit zerstört."
+    ))
+    s.append(sp(6))
+    s.append(callout_bold(
+        "EXEKUTION — KAPITEL 05<br/><br/>"
+        "— Starte bei 10 km/Woche. Nicht mehr.<br/>"
+        "— Steigere maximal 10% pro Woche.<br/>"
+        "— 80% des Volumens bleibt Zone 2. Kein Verhandeln.<br/>"
+        "— Hartes Cardio ausschließlich an Extremitäten-Tagen stapeln.<br/>"
+        "— Jede Cardio-Kalorie wird zur Untergrenze hinzugegessen. Keine Ausnahmen."
     ))
 
     return s

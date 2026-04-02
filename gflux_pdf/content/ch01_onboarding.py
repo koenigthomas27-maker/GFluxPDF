@@ -57,6 +57,11 @@ def build() -> list:
         "Das ist der primäre, kompromisslose Kontrollmechanismus."
     ))
     s.append(sp(6))
+    s.append(body(
+        "Wenn diese Voraussetzungen nicht erfüllt sind, limitiert nicht das Protokoll deinen "
+        "Fortschritt — du limitierst es."
+    ))
+    s.append(sp(8))
 
     s.append(H2("Tag 1: Die Adaptionsphase (Pipeline Stufe 1)"))
     s.append(body(
@@ -83,6 +88,33 @@ def build() -> list:
         "das Feedback deines ZNS kennen. Erst wenn du die Adaption auf zellulärer Ebene verstanden "
         "hast, macht die Optimierungsphase durch das CbTK 1-on-1 Coaching oder den automatisierten "
         "Tracker Sinn. Verdien dir das Upgrade."
+    ))
+    s.append(sp(6))
+    s.append(body(
+        "Die Körperfett-Deckelregel ist kein ästhetisches Kriterium. Sie ist das Eingangstor zu "
+        "Insulinsensitivität, hormoneller Balance und Regenerationskapazität — den drei Mechanismen, "
+        "auf denen jedes weitere Kapitel aufbaut."
+    ))
+    s.append(sp(8))
+    s.append(callout_bold(
+        "HÄUFIGE FEHLER — EINSTIEG & ONBOARDING<br/><br/>"
+        "— <b>Zu früh einsteigen (Körperfett über Grenzwert):</b> Insulinsensitivität ist eingeschränkt. "
+        "Die Nährstoffverteilung ist suboptimal. Das Protokoll kann sein Potenzial nicht entfalten.<br/>"
+        "— <b>Keine laufende Basis vorhanden:</b> 10 km/Woche ist Minimum, kein Richtwert. Ohne Basis "
+        "bricht die Regeneration in Woche 3 zusammen — nicht sofort.<br/>"
+        "— <b>Struktur nach zwei Wochen wechseln:</b> Die Adaptionsphase braucht Konstanz. Jeder "
+        "Wechsel setzt den Zähler zurück.<br/>"
+        "— <b>Cardio von Tag 1 maximal ansetzen:</b> Die ZNS-Kapazität ist noch nicht aufgebaut. "
+        "Die Überlastung kommt verzögert — in Woche 3, nicht in Woche 1."
+    ))
+    s.append(sp(6))
+    s.append(callout_bold(
+        "EXEKUTION — KAPITEL 01<br/><br/>"
+        "— Überprüfe alle Voraussetzungen. Erst einsteigen, wenn alle erfüllt sind.<br/>"
+        "— Wähle deine Zyklusstruktur jetzt: 9-Tage oder 3/4-Tage-Split. Nicht in Woche 3 ändern.<br/>"
+        "— Starte mit 10 km/Woche Cardio. Nicht mehr.<br/>"
+        "— Fixiere deine Hauptübungen für die ersten 4 Wochen. Keine Experimente.<br/>"
+        "— Führe die ersten 4 Wochen manuell durch. Das System verstehen kommt vor dem Tracker."
     ))
 
     return s
