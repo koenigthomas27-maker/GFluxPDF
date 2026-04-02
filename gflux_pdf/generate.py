@@ -46,6 +46,7 @@ from gflux_pdf.content import (
     ch12_athletinnen,
     ch13_prozess,
     appendix,
+    contact,
 )
 
 
@@ -80,6 +81,9 @@ def build_story(toc_flowable) -> list:
 
     # Appendix
     story += appendix.build()
+
+    # Contact page
+    story += contact.build()
 
     return story
 

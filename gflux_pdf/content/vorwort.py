@@ -14,6 +14,18 @@ def build() -> list:
     ))
     s.append(sp(12))
 
+    s.append(callout_bold(
+        "Dieses System ist nicht für dich, wenn…<br/><br/>"
+        "— Dein Ziel drei Wochen Beachbody für den nächsten Urlaub ist. Leg das hier weg.<br/>"
+        "— Du nicht bereit bist, deine Kalorien zu tracken. Ohne Präzision gibt dir dieses "
+        "Protokoll gar nichts.<br/>"
+        "— Du nach Woche 3 bereits das nächste Programm googelst. Du wirst hier genauso "
+        "stagnieren wie überall sonst — der Fehler bist du, nicht das System.<br/>"
+        "— Du ein Programm suchst, das dir sagt, was du hören willst. Dieses hier sagt dir, "
+        "was wahr ist."
+    ))
+    s.append(sp(12))
+
     s.append(H2("Ist das Hyrox? Nein — aber du wirst jeden Hyrox-Athleten in die Tasche stecken"))
     s.append(body(
         "Eines vorweg: Das hier ist kein Hyrox-Programm, keine Hindernislauf-Methodik und kein "
@@ -116,8 +128,17 @@ def build() -> list:
         "entweder Kraft oder Ausdauer erfordert — aber nicht beides."
     ))
     s.append(body(
-        "Das Ziel ist ein Leben lang dominant auszusehen und sich makellos zu bewegen. Nicht so lange, "
-        "wie der aktuelle Block andauert. Starke Gewohnheiten. Flexibles Programm. Eine eiserne Mentalität."
+        "Besonders für diejenigen, die früh genug verstehen, was auf dem Spiel steht: Mit Mitte zwanzig "
+        "kommt man noch mit fast allem durch. Schlechte Ernährung, falsches Training, zu wenig Schlaf — "
+        "der Körper kompensiert. Aber die Entscheidungen, die du jetzt triffst, sind die Entscheidungen, "
+        "mit denen du in zehn Jahren lebst. Gelenke erinnern sich. Sehnen vergessen nicht. Und ein "
+        "Körper, der mit schlechter Methodik aufgebaut wurde, gibt das irgendwann zurück — mit Zinsen."
+    ))
+    s.append(body(
+        "Das Ziel dieses Protokolls ist kein 8-Wochen-Ergebnis. Es ist der Körper, der mit 35 noch "
+        "besser performt als mit 25. Der mit 40 keine Verletzungsgeschichte verwaltet, sondern immer "
+        "noch Fortschritt macht. Starke Gewohnheiten. Flexibles Programm. Ein System, das wächst, "
+        "weil du wächst."
     ))
 
     return s

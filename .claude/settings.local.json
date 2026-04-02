@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python -m gflux_pdf.generate)"
+      "Bash(python -m gflux_pdf.generate)",
+      "Bash(python -m py_compile gflux_pdf/content/*.py)",
+      "Bash(grep -h \"^from gflux_pdf.components import\" gflux_pdf/content/*.py)",
+      "Bash(grep -n \"2\\\\.3\\\\|2\\\\.7\" gflux_pdf/content/ch*.py)",
+      "Bash(grep -in \"death\" gflux_pdf/content/*.py)",
+      "Bash(python3:*)",
+      "Bash(python -c \":*)"
     ]
   }
 }
