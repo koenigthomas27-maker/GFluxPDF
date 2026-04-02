@@ -53,9 +53,10 @@ def build_story(toc_flowable) -> list:
     story = []
 
     # Page 1: cover template, then switch to main template for all other pages
-    story.append(NextPageTemplate("cover"))
-    story.append(PageBreak())
     story.append(NextPageTemplate("main"))
+    story.append(PageBreak())
+    
+    
 
     # Front matter
     story += vorwort.build()
